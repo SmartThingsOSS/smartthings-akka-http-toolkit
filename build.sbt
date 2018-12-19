@@ -1,7 +1,7 @@
 lazy val compileScalastyle = taskKey[Unit]("compileScalastyle")
 
 lazy val common = Seq(
-  organization := "com.smartthings.akkakit",
+  organization := "com.smartthings.akkahttpkit",
   git.baseVersion := "1.0",
   scalaVersion := "2.12.6",
 
