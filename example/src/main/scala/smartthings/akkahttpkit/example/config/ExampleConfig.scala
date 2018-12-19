@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package smartthings.akkakit.example.config
+package smartthings.akkahttpkit.example.config
 
 import java.io.File
 

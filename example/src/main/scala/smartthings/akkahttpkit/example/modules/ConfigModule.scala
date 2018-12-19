@@ -14,13 +14,12 @@
  * limitations under the License.
  */
 
-package smartthings.akkakit.example.modules
+package smartthings.akkahttpkit.example.modules
 
-import akka.http.scaladsl.server.Route
-import smartthings.akkakit.example.routes.BaseRoute
+import smartthings.scalakit.modules.Module
 
-trait RouteModule {
+trait ConfigModule[C] extends Module {
 
-  val route: Route = new BaseRoute().route
+  def config: C
 
 }

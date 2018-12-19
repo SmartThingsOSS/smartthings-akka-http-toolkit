@@ -7,7 +7,7 @@ lazy val common = Seq(
 
   compileScalastyle := scalastyle.in(Compile).toTask("").value,
 
-  resolvers += Resolver.bintrayRepo("otherUser", "maven"),
+  resolvers += Resolver.bintrayRepo("smartthingsoss", "maven"),
 
   scalacOptions ++= Seq(
     "-deprecation",

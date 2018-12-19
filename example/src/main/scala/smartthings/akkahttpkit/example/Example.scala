@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package smartthings.akkakit.example
+package smartthings.akkahttpkit.example
 
 import akka.Done
 import akka.actor.{ActorSystem, CoordinatedShutdown}
@@ -23,14 +23,14 @@ import akka.http.scaladsl.server.Route
 import akka.stream.{ActorMaterializer, Materializer}
 import cats.effect.IO
 import com.typesafe.scalalogging.StrictLogging
-import smartthings.akkakit.example.config.{ExampleConfig, ServerConfig}
+import smartthings.akkahttpkit.example.modules.RouteModule
+import smartthings.akkahttpkit.example.config.{ExampleConfig, ServerConfig}
 import smartthings.scalakit.modules.Module
 import smartthings.scalakit.{ConfigurationParseError, ConfigurationReadError}
-import smartthings.akkakit.example.modules.{ConfigModule, RouteModule}
+import smartthings.akkahttpkit.example.modules.ConfigModule
 
 import scala.concurrent.ExecutionContext
 import scala.concurrent.duration._
-
 import smartthings.scalakit.async.catseffect.Implicits.asyncForIO
 
 class Example extends StrictLogging {

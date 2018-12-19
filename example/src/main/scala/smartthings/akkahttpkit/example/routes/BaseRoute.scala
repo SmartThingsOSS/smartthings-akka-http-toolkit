@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package smartthings.akkakit.example.routes
+package smartthings.akkahttpkit.example.routes
 
 import akka.http.scaladsl.server.Directives._
 import akka.http.scaladsl.server.Route
